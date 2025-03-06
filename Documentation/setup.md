@@ -10,37 +10,44 @@ This project is a Python program that does the following:
 ## Model Running Instructions
 
 ### Collect Kenpom Data
-- Go to the tests folder
+- Go to the ModelFiles folder
 - Run the following:
-   pytest test_get_kenpom_data.py -v -s 
+   python get_kenpom_data.py
 - This creates the kenpom.csv file in the ModelData folder
 
 ### Collect Today's Lines and Totals
 
-- Go to the tests folder
+- Go to the ModelFiles folder
 - Run the following:
-   pytest test_get_matchups_and_lines.py -v -s 
+   python get_matchups_and_lines.py
 - This creates the todays_matchups.csv file in the ModelData folder
 - Clean this file by opening and removing any lines in the csv that do not have lines or manually add those lines (you will see matchups with N/A as the lines)
 
+### Team Name Differences
+
+- Here you may need to change some of the team names as they differ from Kenpom to Vegas Insider
+- Example:  Indiana State is 'Indiana St' on KenPom and 'Indiana State' on Vegas Insider
+- The St./State ones have been dealt with in the files
+
+
 ### Run the Model
-- Go to the tests folder
+- Go to the ModelFiles folder
 - Run the following:
-   pytest test_NCAAHoopsModelFromCSV.py -v -s 
+   python NCAAHoopsModelFromCSV.py -v -s 
 - Model_Projections.csv is created in the ModelData folder.   The model will give who it thinks should be favored and the projected total.
 
 ### Run the Total Script to project Picks and Confidence
-- Go to the tests folder
+- Go to the ModelFiles folder
 - Run the following:
-   pytest test_total_model_picks.py -v -s 
+   python total_model_picks.py -v -s 
 - This creates the csv file Total_Model_Picks.csv that lists the games, lines, model projections and confidence in each pick (based on model versus actual lines.)
 
 
 
 ### Run the Line Script to project Picks and Confidence
-- Go to the tests folder
+- Go to the ModelFiles folder
 - Run the following:
-   pytest test_line_model_picks.py -v -s 
+   python line_model_picks.py -v -s 
 - This creates the csv file Line_Model_Picks.csv that lists the games, lines, model projections and confidence in each pick (based on model versus actual lines.)
 
 
