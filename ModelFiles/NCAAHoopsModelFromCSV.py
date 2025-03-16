@@ -64,8 +64,8 @@ def hoopswinners():
         roadadjdefense = roadrow.iloc[0]["AdjD"]
         #print("roadadjdefense: "+str(roadadjdefense))
 
-        HomeCourtAA = 3.02 #zero if nuetral court
-
+        HomeCourtAA = 0.00 #zero if nuetral court
+        #HomeCourtAA = 3.02 #zero if nuetral court
 
         avgAdjT = df2["AdjT"].mean()
         #print("avgAdjT: "+str(avgAdjT))

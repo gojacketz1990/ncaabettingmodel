@@ -1,6 +1,10 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from time import sleep
 import pandas as pd
 from selenium.webdriver.support.ui import Select
@@ -32,7 +36,12 @@ def Average(lst):
 
 def vegasInsider_webscrape():
 
-    driver = webdriver.Chrome()
+
+    chrome_options = Options()
+    chrome_options.add_argument("--enable-javascript")
+
+    service = Service("/opt/homebrew/bin/chromedriver")  # Replace with actual path
+    driver = webdriver.Chrome(service=service, options=chrome_options)
 
     driver.get('https://www.vegasinsider.com/college-basketball/odds/las-vegas/')
     driver.fullscreen_window()
