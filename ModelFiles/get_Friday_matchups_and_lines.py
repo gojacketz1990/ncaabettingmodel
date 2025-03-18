@@ -48,7 +48,8 @@ def vegasInsider_webscrape():
    # driver.maximize_window()
 
     #put the teams together:
-
+    driver.find_element(By.XPATH,"//div[@data-endpoint='/college-basketball/odds/las-vegas/?date=2025-03-21']").click()
+    sleep(3)
 
 
     allhometeams = driver.find_elements(By.XPATH,"//tbody[contains(@id,'spread')]/tr[@class='footer']")

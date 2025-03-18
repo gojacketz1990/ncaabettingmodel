@@ -35,7 +35,7 @@ def kenpom_webscrape():
 
     driver.get('https://kenpom.com')
     driver.fullscreen_window()
-    driver.maximize_window()
+    #driver.maximize_window()
 
     #put the teams together:
 
