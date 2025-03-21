@@ -45,10 +45,14 @@ def vegasInsider_webscrape():
 
     driver.get('https://www.vegasinsider.com/college-basketball/odds/las-vegas/')
     driver.fullscreen_window()
+
+
    # driver.maximize_window()
 
     #put the teams together:
 
+    #driver.find_element(By.XPATH,"//div[@data-endpoint='/college-basketball/odds/las-vegas/?date=2025-03-21']").click()
+    #sleep(3)
 
 
     allhometeams = driver.find_elements(By.XPATH,"//tbody[contains(@id,'spread')]/tr[@class='footer']")
@@ -63,7 +67,7 @@ def vegasInsider_webscrape():
     for allhometeamsandlines in allhometeams:
         #print(allhometeamsandlines.text)
         homeTeam.append(allhometeamsandlines.find_element(By.XPATH,"./td/div/span/a").text)
-        openingLine.append(allhometeamsandlines.find_element(By.XPATH,"./td[@class='game-odds'][1]/span/span").text)
+        openingLine.append(allhometeamsandlines.find_element(By.XPATH,"./td[@class='game-odds'][2]/a/span[@class='data-value']").text)
         #openingLine.append(allhometeamsandlines.find_element(By.XPATH,"./td[@class='game-odds'][4]/a/span").text)
 
     for roadteams in allroadteams:
@@ -84,7 +88,11 @@ def vegasInsider_webscrape():
 
     for totals in alltotals:
 
-        openingTotal.append(totals.find_element(By.XPATH,"./td[@class='game-odds'][1]/span/span").text)
+        #openingTotal.append(totals.find_element(By.XPATH,"./td[@class='game-odds'][1]/span/span").text)
+        openingTotal.append(totals.find_element(By.XPATH,"./td[@class='game-odds'][2]/a/span[@class='data-value']").text)
+
+
+
         print(totals.find_element(By.XPATH,"./td[@class='game-odds'][4]/a/span").text)
 
     driver.quit()

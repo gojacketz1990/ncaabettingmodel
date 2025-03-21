@@ -69,10 +69,22 @@ def kenpom_webscrape():
         if team_name.endswith('St.'):
             team_name = team_name.replace('St.', 'State')
 
-        # Append to the list
-        team.append(team_name)
+        if team_name == "SIUE":
+            team_name = team_name.replace('SIUE', 'SIU Edwardsville')
 
-        #team.append(stats.find_element(By.XPATH,'./td[2]/a').text)
+        if team_name == "Nebraska Omaha":
+            team_name = team_name.replace('Nebraska Omaha', 'Omaha')
+
+        if team_name == "Mississippi":
+            team_name = team_name.replace('Mississippi', 'Ole Miss')
+
+        if team_name == "Connecticut":
+            team_name = team_name.replace('Connecticut', 'UConn')
+
+        print(team_name)
+
+
+        team.append(team_name)
 
 
         conference.append(stats.find_element(By.XPATH,'./td[3]').text)

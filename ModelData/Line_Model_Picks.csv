@@ -1,14 +1,15 @@
 Home Team,Away Team,Opening Home Line,Model Favorite,Model Line,Pick,Point Difference,Confidence
-BYU,VCU,-3.5,BYU,-0.44,VCU,3,Medium
-Texas A&M,Yale,-7.5,Texas A&M,-9.19,Texas A&M,2,Low
-Louisville,Creighton,-1.5,Louisville,-2.78,Louisville,1,Very Low
-Purdue,High Point,-10.5,Purdue,-9.95,High Point,1,Very Low
-Clemson,McNeese,-7.5,Clemson,-6.53,McNeese,1,Very Low
-Tennessee,Wofford,-18.5,Tennessee,-17.32,Wofford,1,Very Low
-Kansas,Arkansas,-4.5,Kansas,-3.82,Arkansas,1,Very Low
-Missouri,Drake,-4.5,Missouri,-5.48,Missouri,1,Very Low
-Michigan,UC San Diego,-3.5,Michigan,-2.54,UC San Diego,1,Very Low
-Texas Tech,UNC Wilmington,-15.5,Texas Tech,-14.91,UNC Wilmington,1,Very Low
-Wisconsin,Montana,-17.5,Wisconsin,-17.88,Wisconsin,0,Very Low
-Gonzaga,Georgia,-4.5,Gonzaga,-4.89,Gonzaga,0,Very Low
-UCLA,Utah State,-5.5,UCLA,-5.15,Utah State,0,Very Low
+UConn,Oklahoma,-5.5,UConn,-0.4,Oklahoma,5,Very High
+Alabama,Robert Morris,-23.5,Alabama,-20.75,Robert Morris,3,Medium
+Ole Miss,North Carolina,1.5,Ole Miss,-1.46,Ole Miss,3,Medium
+Maryland,Grand Canyon,-10.5,Maryland,-13.96,Maryland,3,Medium
+Oregon,Liberty,-7.0,Oregon,-4.03,Liberty,3,Medium
+Mississippi State,Baylor,-1.0,Baylor,-0.54,Baylor,2,Low
+Iowa State,Lipscomb,-14.5,Iowa State,-12.08,Lipscomb,2,Low
+Florida,Norfolk State,-28.5,Florida,-26.14,Norfolk State,2,Low
+Michigan State,Bryant,-17.5,Michigan State,-19.2,Michigan State,2,Low
+Memphis,Colorado State,1.5,Colorado State,-0.82,Memphis,1,Very Low
+Saint Mary's,Vanderbilt,-4.0,Saint Mary's,-5.18,Saint Mary's,1,Very Low
+Marquette,New Mexico,-4.0,Marquette,-3.0,New Mexico,1,Very Low
+Kentucky,Troy,-11.5,Kentucky,-11.26,Troy,0,Very Low
+Arizona,Akron,-14.5,Arizona,-14.46,Akron,0,Very Low
