@@ -31,7 +31,23 @@ from sklearn.model_selection import cross_val_score, StratifiedKFold, train_test
 
 df_train = pd.read_csv("../ModelData/kenpom.csv")
 print(df_train.head())
+print(df_train.info())
 
+### Data
+#Rank
+#Team
+#Conference
+#winloss
+#AdjEM
+#AdmO
+#AdjD
+#AdjT
+#Luck
+#AdjEMSoS
+#OppO
+#OppD
+#AdjEMNCSOS  \
 df_lines = pd.read_csv("../ModelData/Line_Model_Picks.csv")
+
 
 
